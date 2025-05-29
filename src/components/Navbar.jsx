@@ -9,7 +9,7 @@ function Navbar() {
           <div className="nleft flex items-center">
             <img
               className="w-28 md:w-32 lg:w-40"
-              src="/images/refokus.png"
+              src="images/refokus.png"
               alt=""
             />
             {/* Show links on all screens with smaller text on mobile */}
