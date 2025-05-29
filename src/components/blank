@@ -1,0 +1,146 @@
+function Marqe({ imagesurls, direction }) {
+  return (
+    <div className=" flex w-full gap-[143vw] overflow-hidden">
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-257%" }}
+        animate={{ x: direction === "left" ? "-257%" : "0" }}
+        transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+        className="flex py-5.5 gap-20 h-[7.8vh] whitespace-nowrap pr-40 mt-4"
+      >
+        {imagesurls.map((url, index) => (
+          <img key={index} src={url} className="" />
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-282%" }}
+        animate={{ x: direction === "left" ? "-282%" : "0" }}
+        transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+        className="flex py-5.5 gap-20 h-[7.8vh] whitespace-nowrap  mt-4"
+      >
+        {imagesurls.map((url, index) => (
+          <img key={index} src={url} className="" />
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+
+sm:h-[10px] md:h-[50px] object-contain
+sm:h-[10px] md:h-[50px] object-contain
+
+
+
+
+return (
+<div className="w-full">
+  <div className="max-w-screen-xl mx-auto py-10 px-4 md:px-6 flex flex-col lg:flex-row gap-10">
+    {/* Refokus Heading - visible only on lg */}
+    <div className="hidden lg:block basis-1/2">
+      <h1 className="text-[12rem] text-white tracking-tight leading-none font-semibold">
+        refokus.
+      </h1>
+    </div>
+
+    {/* Right Side */}
+    <div className="basis-full lg:basis-1/2 flex flex-col gap-10">
+      {/* Socials & Sitemap side by side */}
+      <div className="flex gap-10">
+        <div className="w-1/2">
+          <h4 className="text-zinc-300 mb-4">Socials</h4>
+          {socialLinks.map((elem, i) => (
+          <a key={i} className="block text-zinc-600 mt-1" href={elem.url} target="_blank" rel="noopener noreferrer">
+            {elem.name}
+          </a>
+          ))}
+        </div>
+
+        <div className="w-1/2">
+          <h4 className="text-zinc-300 mb-4">Sitemap</h4>
+          {siteMap.map((elem, i) => (
+          <a key={i} className="block text-zinc-400 mt-1" href={elem.url} target="_blank" rel="noopener noreferrer">
+            {elem.name}
+          </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Paragraph and Image below */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <p className="text-zinc-100 text-left md:text-right">
+          Refokus is a pioneering digital agency by design and empowered by technology.
+        </p>
+        <img className="w-40 md:w-48"
+          src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197e4/66bd4a1138d6a32addf4b6b2_premium_partner_badge_enterprise_blue.webp"
+          alt="Premium Partner Badge" />
+      </div>
+    </div>
+  </div>
+</div>
+);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Marqe({ imagesurls, direction }) {
+    return (
+      <div className="flex w-full overflow-hidden gap-[420vw] sm:gap-[143vw] md:gap-[143vw] lg:gap-[143vw]">
+  
+        {/* Loop 1 */}
+        <motion.div
+          initial={{ x: direction === "left" ? "0" : "-257%" }}
+          animate={{ x: direction === "left" ? "-257%" : "0" }}
+          transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+          className="flex gap-20 md:gap-20 py-5.5 h-[7.8vh] sm:h-[4vw] md:h-[5vw] whitespace-nowrap mt-4 pr-20 md:pr-40"
+        >
+          {imagesurls.map((url, index) => (
+            <img
+              key={index}
+              src={url}
+              className="w-[80px] sm:w-[120px] md:w-[140px] lg:w-[7vw] object-contain"
+            />
+          ))}
+        </motion.div>
+  
+        {/* Loop 2 */}
+        <motion.div
+          initial={{ x: direction === "left" ? "0" : "-282%" }}
+          animate={{ x: direction === "left" ? "-282%" : "0" }}
+          transition={{ ease: "linear", duration: 25, repeat: Infinity }}
+          className="flex gap-20 md:gap-20 py-5.5 h-[7.8vh] sm:h-[4vw] md:h-[5vw] whitespace-nowrap mt-4 mb-4"
+        >
+          {imagesurls.map((url, index) => (
+            <img
+              key={index}
+              src={url}
+              className="w-[80px] sm:w-[120px] md:w-[140px] lg:w-[7vw] object-contain"
+            />
+          ))}
+        </motion.div>
+      </div>
+    );
+  }
+  
+  export default Marqe;
