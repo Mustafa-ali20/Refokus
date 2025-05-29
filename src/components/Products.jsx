@@ -47,11 +47,11 @@ function Products() {
   ];
 
   const videos = [
-    "/videos/chargeflow-169.webm",
-    "/videos/cula-169.webm",
-    "/videos/deepset-169.webm",
-    "/videos/umault-169.webm",
-    "/videos/layoutland-169.webm",
+    `${import.meta.env.BASE_URL}videos/chargeflow-169.webm`,
+    `${import.meta.env.BASE_URL}videos/cula-169.webm`,
+    `${import.meta.env.BASE_URL}videos/deepset-169.webm`,
+    `${import.meta.env.BASE_URL}videos/umault-169.webm`,
+    `${import.meta.env.BASE_URL}videos/layoutland-169.webm`,
   ];
 
   const [pos, setPos] = useState();
