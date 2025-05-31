@@ -1,5 +1,6 @@
 import React from "react";
 import Marqe from "./Marqe";
+import MarqueMob from "./MarqueMob";
 
 function Marqes() {
   var images = [
@@ -53,9 +54,12 @@ function Marqes() {
   return (
     <>
       <div className="py-10 ">
-        <div className=" w-full py-2 bg-white mt-27 relative">
+        <div className=" w-full py-2 bg-white mt-24 relative ">
           {images.map((items, i) => (
-            <Marqe imagesurls={items} key={i} direction={i === 0? "left" : "right"} />
+            <>
+              <Marqe imagesurls={items} key={i} direction={i === 0? "left" : "right"} />
+              <MarqueMob imagesurls={items} key={i} direction={i === 0? "left" : "right"} />
+            </>
           ))}
         </div>
       </div>

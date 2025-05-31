@@ -15,7 +15,7 @@ function App() {
 const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="w-full min-h-screen bg-zinc-900 font-[Satoshi-Variable] overflow-x-hidden px-5it md:px-5 lg:px-0">
+    <div className="w-full min-h-screen bg-zinc-900 font-[Satoshi-Variable] overflow-x-hidden px-5 sm:px-5 md:px-5 lg:px-0">
       <Navbar />
       <Work />
       <Stripes />
